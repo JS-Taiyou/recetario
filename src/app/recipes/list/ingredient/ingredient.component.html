@@ -1,3 +1,11 @@
-<p>
-  ingredient works!
-</p>
+<a class="list-group-item clearfix"
+   href="#">
+  <div class="col-xs-9">
+    <h4 class="list-group-item-heading">{{ recipe.name }}</h4>
+    <p class="list-group-item-text">{{ recipe.description }}</p>
+  </div>
+  <span class="col-xs-3">
+        <img [src]="recipe.imagePath" alt="{{ recipe.name }}" class="img-responsive center-block"
+             style="max-height: 100%;">
+      </span>
+</a>
