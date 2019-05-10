@@ -5,9 +5,9 @@ import { AppComponent } from './app.component';
 import {FormsModule} from '@angular/forms';
 import {ShoppingListComponent} from './shopping-list/shopping-list.component';
 import {ShoppingListEditComponent} from './shopping-list/edition/shopping-list-edit.component';
-import {IngredientComponent} from './recipes/list/ingredient/ingredient.component';
+import {RecipeComponent} from './recipes/list/recipe/recipe.component';
 import {RecipeListComponent} from './recipes/list/recipe-list.component';
-import {RecipeDetailComponent} from './recipes/list/ingredient/detail/recipe-detail.component';
+import {RecipeDetailComponent} from './recipes/list/recipe/detail/recipe-detail.component';
 import {RecipesComponent} from './recipes/recipes.component';
 import {HeaderComponent} from './header/header.component';
 
@@ -16,7 +16,7 @@ import {HeaderComponent} from './header/header.component';
     AppComponent,
     ShoppingListComponent,
     ShoppingListEditComponent,
-    IngredientComponent,
+    RecipeComponent,
     RecipeListComponent,
     RecipeDetailComponent,
     RecipesComponent,

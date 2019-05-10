@@ -1,0 +1,43 @@
+<div *ngIf="recipe; else noRecipeSelected" class="row">
+  <div class="row">
+    <div class="col-xs-12">
+      <img alt="" class="img-responsive" src="">
+    </div>
+  </div>
+  <div class="row">
+    <h1>{{ recipe.name }}</h1>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="btn-group">
+        <button class="btn btn-primary dropdown-toggle">
+          Gestionar receta <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="#">Mover a lista de compras</a></li>
+          <li><a href="#">Editar</a></li>
+          <li><a href="#">Borrar</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      {{ recipe.description }}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      Ingredientes
+    </div>
+  </div>
+</div>
+<ng-template #noRecipeSelected>
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="jumbotron">
+        Selecciona una receta
+      </div>
+    </div>
+  </div>
+</ng-template>

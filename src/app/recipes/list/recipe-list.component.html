@@ -6,6 +6,6 @@
 <hr>
 <div class="row">
   <div class="col-xs-12">
-    <app-ingredient *ngFor="let recipe of recipes" [recipe]="recipe"></app-ingredient>
+    <app-ingredient (click)="recipeSelect(recipe)" *ngFor="let recipe of recipes" [recipe]="recipe"></app-ingredient>
   </div>
 </div>
