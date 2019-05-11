@@ -5,21 +5,21 @@
         <div class="col-sm-5">
           <div class="form-group">
             <label for="name">Nombre</label>
-            <input autocomplete="off" class="form-control" id="name" type="text">
+            <input #nameInput autocomplete="off" class="form-control" id="name" type="text">
 
           </div>
         </div>
         <div class="col-sm-2">
           <div class="form-group">
             <label for="amount">Cantidad</label>
-            <input autocomplete="off" class="form-control" id="amount" type="number">
+            <input #amountInput autocomplete="off" class="form-control" id="amount" type="number">
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col-xs-12">
           <div class="btn-group">
-            <button class="btn btn-success" type="submit">Agregar</button>
+            <button (click)="newIngredient()" class="btn btn-success" type="submit">Agregar</button>
             <button class="btn btn-danger" type="button">Borrar</button>
             <button class="btn btn-warning" type="reset">Limpiar</button>
           </div>
